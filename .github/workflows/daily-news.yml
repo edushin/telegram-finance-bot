@@ -25,7 +25,7 @@ jobs:
           
       - name: Install R packages
         run: |
-      R -e "install.packages(c('telegram.bot', 'xml2', 'httr', 'stringr', 'dplyr', 'lubridate', 'jsonlite', 'rvest'), dependencies=TRUE)"
+          R -e "install.packages(c('telegram.bot', 'xml2', 'httr', 'stringr', 'dplyr', 'lubridate', 'jsonlite', 'rvest'), dependencies=TRUE)"
           
       - name: Run bot
         env:

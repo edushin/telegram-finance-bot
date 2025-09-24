@@ -23,9 +23,9 @@ jobs:
           sudo apt-get update
           sudo apt-get install -y libxml2-dev libcurl4-openssl-dev libssl-dev
           
-      - name: Install R packages
-        run: |
-          R -e "install.packages(c('telegram.bot', 'xml2', 'httr', 'stringr', 'dplyr', 'lubridate', 'jsonlite', 'rvest'), dependencies=TRUE)"
+    - name: Install R packages
+      run: |
+        R -e "install.packages(c('telegram.bot', 'xml2', 'httr', 'stringr', 'dplyr', 'lubridate', 'jsonlite', 'rvest', 'ggplot2', 'base64enc'), dependencies=TRUE)"
           
       - name: Run bot
         env:
